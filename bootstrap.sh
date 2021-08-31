@@ -10,5 +10,6 @@ cp -r ${source}/tsconfig.json ${name}
 cp -r ${source}/webpack.config.js ${name}
 cp -r ${source}/.gitignore ${name}
 sed -e "s/template/${name}/g" ${source}/package.json > ${name}/package.json
-
-open ${name}
+cd ${name}
+npm i
+open .
